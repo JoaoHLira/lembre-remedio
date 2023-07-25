@@ -1,4 +1,4 @@
-package br.com.joaolira.lembreremedio.cliente.domain;
+package br.com.joaolira.lembreremedio.usuario.domain;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;

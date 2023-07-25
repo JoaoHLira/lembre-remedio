@@ -1,4 +1,4 @@
-package br.com.joaolira.lembreremedio.cliente.application.api;
+package br.com.joaolira.lembreremedio.usuario.application.api;
 
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
@@ -10,5 +10,5 @@ public interface UsuarioAPI {
 
     @PostMapping
     @ResponseStatus(code = HttpStatus.CREATED)
-    ClienteResponse postCliente(@Valid @RequestBody ClienteRequest clienteRequest);
+    UsuarioResponse postCliente(@Valid @RequestBody UsuarioRequest usuarioRequest);
 }
