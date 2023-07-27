@@ -1,5 +1,6 @@
 package br.com.joaolira.lembreremedio.usuario.domain;
 
+import br.com.joaolira.lembreremedio.usuario.application.api.UsuarioRequest;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -23,4 +24,9 @@ public class Usuario {
     @Email
     @Column(unique = true)
     private String email;
+
+    public Usuario(UsuarioRequest usuarioRequest) {
+        this.nomeCompleto = usuarioRequest.getNomeCompleto();
+        this.email = usuarioRequest.getEmail();
+    }
 }
