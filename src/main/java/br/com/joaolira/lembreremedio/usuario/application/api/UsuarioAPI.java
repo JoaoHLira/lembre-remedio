@@ -10,5 +10,5 @@ public interface UsuarioAPI {
 
     @PostMapping
     @ResponseStatus(code = HttpStatus.CREATED)
-    UsuarioResponse postCliente(@Valid @RequestBody UsuarioRequest usuarioRequest);
+    UsuarioResponse postUsuario(@Valid @RequestBody UsuarioRequest usuarioRequest);
 }

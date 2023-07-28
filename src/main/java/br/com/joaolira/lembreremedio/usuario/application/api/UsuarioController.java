@@ -12,7 +12,7 @@ public class UsuarioController implements UsuarioAPI {
     private final UsuarioService usuarioService;
 
     @Override
-    public UsuarioResponse postCliente(UsuarioRequest usuarioRequest) {
+    public UsuarioResponse postUsuario(UsuarioRequest usuarioRequest) {
         log.info("[inicia] UsuarioController - postCliente");
         UsuarioResponse usuarioCriado = usuarioService.criaUsuario(usuarioRequest);
         log.info("[finaliza] UsuarioController - postCliente");
