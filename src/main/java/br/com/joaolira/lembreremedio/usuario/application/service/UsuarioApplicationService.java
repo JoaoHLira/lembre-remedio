@@ -16,6 +16,8 @@ public class UsuarioApplicationService implements UsuarioService {
         log.info("[inicia] UsuarioApplicationService - criaUsuario");
         Usuario usuario = usuarioRepository.salva(new Usuario(usuarioRequest));
         log.info("[inicia] finaliza - criaUsuario");
-        return null;
+        return UsuarioResponse.builder()
+                .idUsuario(usuario.getIdUsuario())
+                .build();
     }
 }
